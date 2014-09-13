@@ -1,2 +1,12 @@
 <h1>Display#index</h1>
+
+
+<% @movies.each do |movie| %>
+  <div class="entry">
+    <h3><%= movie.title %></h3>
+    <%= sanitize(movie.description) %>
+    <%= sanitize(movie.trivia) %>
+    <%= sanitize(movie.location) %>
+  </div>
+<% end %>
 <p>Find me in app/views/display/index.html.erb</p>
