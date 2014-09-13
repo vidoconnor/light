@@ -1,7 +1,6 @@
 <h1>Display#index</h1>
 
-
-<% @movies.each do |movie| %>
+<% Movie.limit(1).order("RAND()") %>
   <div class="entry">
     <h3><%= movie.title %></h3>
     <%= sanitize(movie.description) %>
