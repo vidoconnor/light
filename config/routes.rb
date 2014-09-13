@@ -1,4 +1,5 @@
 Light::Application.routes.draw do
+  get "display/index"
   resources :movies
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,6 +7,8 @@ Light::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+
+  root :to => 'display#index', :as => 'display'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
