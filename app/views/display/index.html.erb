@@ -1,6 +1,7 @@
 <h1>Display#index</h1>
 
-<% Movie.limit(1).order("RAND()") %>
+
+<%= Movie.limit(1).order("RAND()") %>
   <div class="entry">
     <h3><%= movie.title %></h3>
     <%= sanitize(movie.description) %>
