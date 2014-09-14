@@ -2,7 +2,7 @@ class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update, :destroy]
 
 def search
-  @finds = Movie.search params[:search]
+  @search = Movie.search params[:search]
 end
 
   # GET /movies
