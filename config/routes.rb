@@ -12,8 +12,7 @@ Light::Application.routes.draw do
 
   get :controller=>"movies", :action=>"search" 
 
-
-  post 'display/search_results'   
+  post 'layouts/_search_results', :controller =>"movies", :action => '@movies'   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
