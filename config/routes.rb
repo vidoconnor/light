@@ -10,6 +10,10 @@ Light::Application.routes.draw do
 
   root :to => 'display#index', :as => 'display'
 
+  get :controller=>"movies", :action=>"search" 
+
+
+  post 'display/search_results'   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

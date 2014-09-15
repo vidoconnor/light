@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+CTYPE html>
 <html>
 <head>
 </head>
 
  <ul>
     <% @movies.each do |movie| %>
-  <li><%= link_to movie.title, 
+
+  <li><%= link_to @movies ,
 
     :action => 'show', :title => movie.title   %></li>
 
@@ -17,3 +18,4 @@
   </ul>
 
 </html>
+
