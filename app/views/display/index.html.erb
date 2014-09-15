@@ -1,11 +1,28 @@
 <h1>Display#index</h1>
 
-<% Movies.limit(1).order("RAND()") %>
+<% @movies.each do |movie| %>
   <div class="entry">
     <h3><%= movie.title %></h3>
-    <%= sanitize(movie.description) %>
-    <%= sanitize(movie.trivia) %>
-    <%= sanitize(movie.location) %>
+
+  <ul>
+ <li>description:   <%= sanitize(movie.description) %></li>
+ <li>trvia:   <%= sanitize(movie.trivia) %></li>
+ <li>location:   <%= sanitize(movie.location) %></li>
+  </ul>
   </div>
 <% end %>
+
+<%= form_tag :controller => 'movies', :action => 'search', :method => 'get' do %>
+<%= text_field_tag :search, params[:search], :id => 'search_field' %>
+<%= submit_tag "Search", :name => nil %>
+<%= link_to_function "Clear", "$('search_field').clear()" %>
+<% end %>
+
+
+
+
+
+
+
+
 <p>Find me in app/views/display/index.html.erb</p>
