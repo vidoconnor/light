@@ -6,4 +6,7 @@ class DisplayController < ApplicationController
   def search
     @movies = Movie.search params[:search]
   end
+
+
+
 end

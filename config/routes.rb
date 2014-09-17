@@ -12,7 +12,16 @@ Light::Application.routes.draw do
 
   get :controller=>"movies", :action=>"search" 
 
-  post 'layouts/_search_results', :controller =>"movies", :action => '@movies'   
+  post :controller=>"display", :title=>"*", :action=>"show"
+  post :controller=>"display", :title=>"Nothing in Common", :action=>"show"
+  post :controller=>"display", :title=>"Ferris Bueller's Day Off", :action=>"show"
+  post :controller=>"display", :description=>"Tom Hanks and Jackie Gleeson are estranged father and son who come together.", :action=>"show"
+  post :controller=>"display", :trivia=>"Jackie Gleason's last movie maybe?", :action=>"show"
+
+
+  post 'layouts/_search_results', :controller =>"layouts", :action => 'show'   
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
