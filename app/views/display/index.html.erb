@@ -11,22 +11,39 @@
 </div>
 </header>
 
-
-
 <h1>Display#index</h1>
+
+<div id="main">
 
 <% @movies.each do |movie| %>
   <div class="entry">
 
+
   <ul>
- <li>title: <%= movie.title %></li>
- <li>description:   <%= sanitize(movie.description) %></li>
- <li>trvia:   <%= sanitize(movie.trivia) %></li>
- <li>location:   <%= sanitize(movie.location) %></li>
+ <li><strong>title</strong>: <%= movie.title %></li>
+ <li><strong>description</strong>:   <%= sanitize(movie.description) %></li>
+ <li><strong>trvia</strong>:   <%= sanitize(movie.trivia) %></li>
+ <li><strong>location</strong>:   <%= sanitize(movie.location) %></li>
   </ul>
   </div>
-<% end %>
 
+<% end %>
+</div>
+
+<div id="blurb">
+<p class="blurb">Find locations where Chicago movies were filmed!</p>
+
+  <!-- this find button is just a placeholder for now -->
+   <section id="find">
+      <input type="text" placeholder="enter keyword" id="term" />
+      <button id="search">Find movie </button>
+   </section>
+</div>
+
+  <footer>
+	<ul>
+	<li>About</li> <li>Contact</li> <li>Showtimes</li>  <li>News</li>
+   </footer>
 
 
 

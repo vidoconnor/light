@@ -1,21 +1,75 @@
 
+
 div#logo {
  font-weight:100;
  font-size: 100%;
  border-bottom: 1px solid skyblue; 
 }
 
-
 h1 {   
 	font-family: "Helvetica Neue";
 	text-align: center;
 	font-size: 3.0em;
-	line-height: 0.9em;
+	line-height: 0.95em;
 	font-weight: 400;
 	margin-top: 0px;
 	height: 130px; 
 	padding-top: 30px;
 	
+}
+
+div#main { 
+	margin: 20px 250px 20px 250px;
+	border-bottom: 1px solid skyblue; 
+
+}
+
+div#main ul {
+	padding: 0px;
+}
+
+div#main li { 
+	list-style-type: none;
+	font-family: Helvetica Neue;
+	font-size: 1.25em;
+	line-height: 1.50em;
+	
+}
+
+
+div#blurb { padding: 0px 250px 20px 250px ;
+
+}
+
+p.blurb {
+	font-family: Helvetica Neue;
+	font-weight: 500;
+	font-size: 1.50em;
+	text-align: center;
+
+}
+
+footer { 
+	background-color: skyblue;
+	padding-top: 20px;
+	margin: 20px 250px 20px 250px;
+	height: 80px;
+}
+
+footer ul {
+	list-style-type: none;
+	vertical-align: middle;
+	padding-left: 70px;
+	font-family: Helvetica Neue;
+	font-size: 1.5em;
+	color: white;
+	font-weight: 600;
+}
+
+
+footer li {
+	display: inline;
+	padding-right: 20px;
 }
 
 // Place all the styles related to the display controller here.
