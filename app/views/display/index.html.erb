@@ -1,10 +1,25 @@
+
+<header>
+
+<div id="logo">
+
+
+    <h1> lights, <br />  camera,  <br />
+     <strong><em>Chicago!</em></strong><br /> <img src="assets/images/newstar.png" height="30" width="27" />
+    <img src="newstar.png" height="30" width="27" /> <img src="newstar.png" height="30" width="27" /> <img src="newstar.png" height="30" width="27" /></h1>
+
+</div>
+</header>
+
+
+
 <h1>Display#index</h1>
 
 <% @movies.each do |movie| %>
   <div class="entry">
-    <h3><%= movie.title %></h3>
 
   <ul>
+ <li>title: <%= movie.title %></li>
  <li>description:   <%= sanitize(movie.description) %></li>
  <li>trvia:   <%= sanitize(movie.trivia) %></li>
  <li>location:   <%= sanitize(movie.location) %></li>
